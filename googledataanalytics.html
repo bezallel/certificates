@@ -6,37 +6,81 @@
     <title>Peace Edogun Google Certificate</title>
 </head>
 <body>
-    <style>
+      <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    body, html {
-      height: 100%;
+     body, html {
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      position: relative;
+      padding: 20px;
     }
 
-    .certificate-container {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 90%;
       max-width: 1200px;
       padding: 20px;
     }
 
+    .certificate-container {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+
+    .certificate-container {
+      width: 90%;
+      max-width: 1200px;
+    }
+
     .certificate-container img {
       width: 100%;
-      height: auto; 
+      height: auto;
       display: block;
-      border-radius: 8px; 
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .top-right-button {
+      position: absolute;
+      top: 20px;
+      right: 90px;
+      text-decoration: none;
+      background-color: #fc1346;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .top-right-button:hover {
+      background-color: #005bb5;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .top-right-button {
+        position: static;
+        display: block;
+        margin: 10px auto 20px auto;
+      }
     }
   </style>
 </head>
 <body>
+   <a href="mlops.html" target="_blank" class="top-right-button">View MLOps Certificate ↗</a>
   <div class="certificate-container">
     <img src="./Images/danalytics.png" alt="MLops Certificate">
   </div>
